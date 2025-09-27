@@ -2,7 +2,7 @@
 
 This repository accompanies Josh Harkness' MSc dissertation project (supervised by Davide Pisani) on Arctic dog domestication using mitogenome data. It aggregates the inputs, analysis scripts, outputs, and metadata required to reproduce the BioGeoBEARS comparative biogeographic analyses, stochastic mapping, and supporting phylogenetic work.
 
-##Abstract##
+##Abstract
 The dispersal of domestic dogs (Canis lupus familiaris) into the Americas has long been  38 debated, particularly whether Arctic lineages reflect a single Thule-era replacement or a  39 series of Holocene introductions. In this study, I combine mitochondrial phylogenomics with  40 biogeographic modelling to reconstruct the colonisation history of Arctic dogs and examine  41 their role in human–dog co-dispersal. The dataset comprised mitochondrial genomes from  42 dogs, wolves, and coyotes, along with newly assembled Greenland sled dog sequences.  43 Phylogenetic inference in IQ-TREE, ancestral range estimation in BioGeoBEARS, and  44 stochastic mapping to estimate dispersal frequencies collectively suggest a complex history  45 rather than a simple introduction. A fossil-constrained, time-scaled phylogeny provided 46 temporal context for these events; placing repeated trans-Beringian dispersals at distinct  47 points during the Holocene. Eastern Siberian populations consistently appear as sources for  48 Arctic lineages, suggesting multiple entry waves. These findings support a layered model of  49 canine dispersal, mirroring human movement, and challenge simplified accounts of total 50 replacements. 
 
 ## Repository Structure
