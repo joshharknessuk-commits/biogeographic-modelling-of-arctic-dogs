@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=pigz
+#SBATCH --account=bisc033004          # Or bisc033004 or bisc033844
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --time=3:00:00
+# No partition specified
+
+module load pigz
+cd /user/work/ay21702/mitogenome_project/fastq
+pigz -p $SLURM_CPUS_PER_TASK *.fastq
+
+
+module load pigz
+
+
+cd /user/work/ay21702/mitogenome_project/fastq
+
+
+pigz -p $SLURM_CPUS_PER_TASK *.fastq
+

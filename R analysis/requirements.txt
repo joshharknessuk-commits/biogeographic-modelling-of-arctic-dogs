@@ -1,0 +1,13 @@
+BioGeoBEARS
+ape
+dplyr
+ggnewscale
+ggplot2
+ggtree
+gt
+paleotree
+phangorn
+strap
+tibble
+tidyr
+tidyverse

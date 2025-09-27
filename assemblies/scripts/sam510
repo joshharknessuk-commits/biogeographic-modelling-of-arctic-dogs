@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name=sam91
+#SBATCH --output=bwa_map_%j.log
+#SBATCH --account=bisc033844
+#SBATCH --partition=teach_cpu
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --time=03:00:00
+
+
+module load bwa
+module load samtools
+
+bwa mem -t 4 scripts+ref/ref_mitogenome.fasta fastq/SRR11193510_1.fastq.gz fastq/SRR11193510_2.fastq.gz | samtools sort -@ 4 -o SRR11193510.sorted.bam

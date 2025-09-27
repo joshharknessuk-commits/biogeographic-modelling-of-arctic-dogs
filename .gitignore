@@ -1,0 +1,29 @@
+# macOS metadata
+.DS_Store
+
+# R history and session files
+.Rhistory
+.Rapp.history
+.RData
+
+# RStudio project settings
+.Rproj.user/
+
+# Temporary Excel lock files
+~$*
+
+# Outputs that can be regenerated interactively
+outputs/.Rhistory
+outputs/.Rapp.history
+outputs/.RData
+
+# Time paleotree temp files
+R analysis/timepaleotree()/.Rhistory
+R analysis/timepaleotree()/.RData
+R analysis/timepaleotree()/~$*
+
+# BSM temp history files
+R analysis/BSM/.Rhistory
+
+# Metadata temp files
+metadata/~$*

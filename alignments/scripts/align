@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name=mafft
+#SBATCH --account=bisc033844
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --time=10:00:00
+
+module load mafft
+
+for file in all_genes/*.fasta; do
+    filename=$(basename "$file")
+    mafft --auto "$file" > alignedgenes/"$filename"
+done
+

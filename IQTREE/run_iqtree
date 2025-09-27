@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#SBATCH --job-name=iqtree
+
+#SBATCH --nodes=1
+
+#SBATCH --account=bisc033844
+
+#SBATCH --ntasks-per-node=1
+
+#SBATCH --cpus-per-task=16
+
+#SBATCH --time=200:00:00
+
+#SBATCH --mem=90Gb
+
+ 
+
+module load apps/iqtree/2.0.6
+
+ 
+
+cd $SLURM_SUBMIT_DIR
+
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}
+
+iqtree2 -s FcC_supermatrix.phy -m MFP -nt 16 -bb 1000
